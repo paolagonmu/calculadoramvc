@@ -20,4 +20,9 @@ public class classmodelo {
     public void guardar_mMas(double resultado){
     this.resultado=resultado;
     }
+    
+    public void guaradar_mMenos(double resultado){
+    }
 }
+
+
