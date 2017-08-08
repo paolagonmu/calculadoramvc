@@ -29,6 +29,31 @@ public class classcontrol {
       
   
   }
+  
+  public void resta(){
+  resultado= num1 - num2;
+  }
+  public void multiplicacion(){
+      resultado = num1 * num2;
+      
+  }
+  private double verifica_numero(){
+      if ( num2==0){
+          System.out.println("ingrese numero nuevamente");
+          return 0;
+      }
+      else{
+          resultado= num1/num2;
+          return resultado;
+      }
+       
+      
+  }
+ 
+  
+  public void dividir (){
+  verifica_numero();
+  }
  public double mostrar(){
          return resultado;
      
@@ -45,9 +70,22 @@ public void mMas(double num3){
         this.resultado=resultado+num3;
         return this.resultado;
 }
+   public void mMenos( double num3){
+  this.num3=num3;
+  resultado= daoCalculadora1.recuperar();
+  restar(resultado,num3);
+  daoCalculadora1.guardar_mMas(resultado);
+   }
+   public double restar( double resultado, double num3){
+   this.resultado=resultado;
+   this.num3=num3;
+   this.resultado=resultado-num3;
+   return this.resultado;
+   }
    public double mr() {
    resultado=daoCalculadora1.recuperar();
    return resultado;
+   
    }
    
    
