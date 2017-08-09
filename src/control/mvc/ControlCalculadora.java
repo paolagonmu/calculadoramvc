@@ -5,18 +5,18 @@
  */
 package control.mvc;
 
-import modelo.mvc.classmodelo;
+import modelo.mvc.DAOCalculadora;
 
 /**
  *
  * @author sena
  */
-public class classcontrol {
-    classmodelo daoCalculadora1=new classmodelo();
+public class ControlCalculadora {
+    DAOCalculadora daoCalculadora1=new DAOCalculadora();
      private double num1;
-      private double num2;
-       private double num3;
-        private double resultado;
+     private double num2;
+     private double num3;
+     private double resultado;
         
    public void ingresar_numeros(double num1, double num2) {
    this.num1=num1;
@@ -68,7 +68,7 @@ public void mMas(double num3){
         this.resultado=resultado;
         this.num3=num3;
         this.resultado=resultado+num3;
-        return this.resultado;
+        return this.resultado; 
 }
    public void mMenos( double num3){
   this.num3=num3;
@@ -87,7 +87,15 @@ public void mMas(double num3){
    return resultado;
    
    }
+
+    public void ingresar_numeros(double parseDouble) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
    
+    
+    public double mc(double resultado){
+   
+    }
    
 }
 
