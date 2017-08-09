@@ -9,7 +9,7 @@ package modelo.mvc;
  *
  * @author sena
  */
-public class classmodelo {
+public class DAOCalculadora {
    private double resultado=0;
   public double recuperar(){
       return resultado;
@@ -23,6 +23,11 @@ public class classmodelo {
     
     public void guaradar_mMenos(double resultado){
     }
+    
+   public void Mc (double resultado ){
+       this.resultado=resultado;
+   } 
+    
 }
 
 
